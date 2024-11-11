@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee pae</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="body">
+
+    <div class="div-Container">
+        <span><img src="./image/coffee.png" class="logo"></span><span class="logo-Text">Coffee</span>
+        <div class="nav-heads">
+            <span class="nav-Text border-Box">Home</span>
+            <span class="nav-Text border-Box">About</span>
+            <span class="nav-Text border-Box">Menu</span>
+            <span class="nav-Text border-Box">Testimoniais</span>
+            <span class="nav-Text border-Box">Gallery</span>
+            <span class="nav-Text border-Box">Contact</span>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+           <span class="font-Best">Best Coffee</span>
+           <p class="font-make">Make Your day great with our <br> Special coffee !!</p>
+           <p class="font-wellcome">Wellcome to our coffee paradise where every bean tells<br>a stay and every cup sparks joy.</p><br>
+        <div class="div-button">
+           <span class="div-button"><button type="button"class="button"onclick="openbox()" >Order Now </button></span>
+           <span><button type="button" class="button-two">Contact Us</button></span>
+        </div>
+       
+    </div>
+        <div class="main-image">
+            <img src="./image/cup.png"class="main-image">
+        </div>
+    </div>
+</div>
+
+   <div class="overlay" id="overlay">
+
+    <div class="form-div">
+
+        <img src="./image/close.png" class="close" onclick="closebox()"/>
+
+        <form class="form">  
+            <input type="text"
+            placeholder="Enter Name"
+            class="form-action"/>
+
+            <input type="text"
+            placeholder="Phone Number"
+            class="form-action"/>
+            <span class="text-para">Size of coffee</span>
+            <select placeholder="Size" class="form-select">
+                <option>Here</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+             <span class="text-para">Type of coffee</span>
+            <select class="form-select">
+              <option>Here</option>
+              <option value="latte">Latte</option>
+              <option value="espresso">Espresso</option>
+              <option value="cappuccino">Cappuccino</option>
+              <option value="americano">Americano</option>
+              <option value="mocha">Mocha</option>
+        
+            </select>
+        </label>
+
+        <button type="submit" class="button buttons" onclick="placeOrder()">Place Order</button>
+        </form>
+    </div>
+   </div>
+   <script src="./script.js"></script>
+   
+</body>
+</html>
